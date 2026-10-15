@@ -1,0 +1,162 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: rgb(3, 3, 3);
+}
+select {
+    padding: 10px;
+    background-color: white;
+    color: black;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    background: white;
+}
+
+h1 {
+    color: rgb(204, 33, 175);
+    margin: 10px;
+}
+
+span {
+    color: rgb(89, 159, 218);
+}
+
+p {
+    font-size: 12px;
+}
+
+input {
+    width: 35%;
+    padding: 12px;
+    border: 1px solid lightgray;
+    border-radius: 8px;
+}
+
+button {
+    padding: 12px;
+    background: rgb(15, 197, 45);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: rgb(15, 100, 43);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    padding: 12px;
+    border-bottom: 1px solid lightgray;
+}
+
+.navbar a {
+    color: gray;
+    text-decoration: none;
+    margin: 5px;
+}
+
+.banner {
+    margin: 20px;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.offers {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.offers img {
+    width: 30%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.categories {
+    display: flex;
+    overflow-x: scroll;
+    margin: 20px;
+}
+
+.categories img {
+    width: 120px;
+    height: auto;
+    margin: 10px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+    background: rgb(247, 247, 237);
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    width: 23%;
+}
+
+.links h3 {
+    color: rgb(201, 73, 163);
+}
+
+.links a {
+    color: rgb(78, 94, 182);
+    text-decoration: none;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.links a:hover {
+    color: rgb(22, 130, 59);
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    input {
+        width: 90%;
+    }
+
+   
+    .banner img {
+        height: auto;
+    }
+
+    .offers {
+        flex-wrap: wrap;
+    }
+
+    .offers img {
+        width: 30%;
+    }
+
+    .categories img {
+        width: 100px;
+    }
+
+    .links {
+        width: 48%;
+    }
+}
